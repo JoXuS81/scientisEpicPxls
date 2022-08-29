@@ -1,0 +1,101 @@
+&ltsection class = "m-0 newsSection p-0">
+                &ltdiv class = "m-0 newsArea p-0">
+                    &lt!-- Image -->
+                    &ltdiv class = "d-none d-sm-block m-0 p-0 topArea">
+                        &ltimg class = "img-fluid" src = "../Images/newsArea/uaeMars.png" alt = "Uae and Mars">
+                    &lt/div>
+                    &ltdiv class = "d-flex justify-content-center">
+                        &ltdiv class = "align-items-center d-flex m-0 newsContent p-0 row">
+                            &lt!-- Left side -->
+                            &ltdiv class = "col-12 col-xxl-6 mb-0 ml-0 mr-0 p-0 textInfo">
+                                &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                    &lth2>
+                                        BY KATLEEN WELLS
+                                    &lt/h2>
+                                &lt/div>
+                                &lth1>
+                                    UAE and Mars
+                                &lt/h1>
+                                &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                    &ltdiv class = "newsLine">
+                                    &lt/div>
+                                &lt/div>
+                                &lth1 class = "date">
+                                    12 
+                                    &ltspan>
+                                        April 2022
+                                    &lt/span>
+                                &lt/h1>
+                            &lt/div>
+                            &lt!-- Text on the right side -->
+                            &ltdiv class = "col-12 col-xxl-6 d-flex justify-content-end mb-0 ml-0 mr-0 p-0 textContainer">
+                                &ltdiv class = "textNews">
+                                    &lth2>
+                                        Mars Mission From the U.A.E. One of the richest country in the Middle East, has a strong space exploration ambitions. It's been a full year since the United Arab Emirates made history when its first-ever interplanetary mission slipped into orbit around Mars. The Emirates Mars Mission, also called Hope, launched in July 2020, arrived at the Red Planet seven months later and successfully entered orbit around Mars on Feb. 9, 2021. After a few months in orbit, the mission began its science observations.
+                                    &lt/h2>
+                                    &lth2 class = "smallerDevices">
+                                        In fact, one of the mission's first findings came from data gathered even before the spacecraft entered its formal science observation program. Hope observations confirmed that an elusive phenomenon called the discrete aurora is taking place on the planet's night side. Hope's primary mission is planned to last one Martian year (687 Earth days). That timeline is important because mission scientists want to understand how weather and climate work across the entire planet both throughout a day and throughout a year. For example, Al Matroushi said that the team has been studying water cloud features that appear to grow at the beginning and end of the day. The spacecraft is also designed to help scientists understand how the layers of Mars' atmosphere interact.
+                                    &lt/h2>
+                                &lt/div>
+                            &lt/div>
+                        &lt/div>
+                    &lt/div>
+                    &ltdiv class = "d-flex justify-content-center">
+                        &lt!-- Comments Area -->
+                        &ltdiv class = "commentsArea">
+                            &lt!-- Top -->
+                            &ltdiv class = "commentsTop">
+                                &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                    &lt!-- H3 -->
+                                    &lth3>
+                                        COMMENTS
+                                    &lt/h3>
+                                &lt/div>
+                                &lt!-- H4 -->
+                                &lth4>
+                                    1 Comment
+                                &lt/h4>
+                            &lt/div>
+                            &lt!-- Comment -->
+                            &ltdiv class = "comment">
+                                &lt!-- H4 -->
+                                &lth4>
+                                    TANYA LASLO
+                                &lt/h4>
+                                &lt!-- First Comment -->
+                                &lth4 class = "firstComment">
+                                    This is a huge program for UAE!
+                                &lt/h4>
+                            &lt/div>
+                            &lt!-- Comment Form -->
+                            &ltdiv class = "commentForm">
+                                &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                    &lt!-- H2 -->
+                                    &lth2>
+                                        LEAVE A COMMENT
+                                    &lt/h2>
+                                &lt/div>
+                                &lt!-- Form -->
+                                &ltform>
+                                    &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                        &lt!-- Name Form -->
+                                        &ltinput class = "nameForm" id = "name" placeholder = "NAME" type = "text">
+                                    &lt/div>
+                                    &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                        &lt!-- Mail Form -->
+                                        &ltinput class = "mailForm" id = "mail" placeholder = "MAIL" type = "email">
+                                    &lt/div>
+                                    &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                        &lt!-- Commenting Form -->
+                                        &lttextarea class = "commentingForm" id = "comment" placeholder = "COMMENT">&lt/textarea>
+                                    &lt/div>
+                                    &ltdiv class = "d-flex justify-content-center justify-content-xxl-start">
+                                        &lt!-- Comment Submit -->
+                                        &ltinput class = "commentSubmit" id = "buttonComment" type = "submit" value = "POST">
+                                    &lt/div>
+                                &lt/form>
+                            &lt/div>
+                        &lt/div>
+                    &lt/div>
+                &lt/div>
+            &lt/section>

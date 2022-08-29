@@ -1,0 +1,723 @@
+header {
+    background:url("../Images/Background.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 4000px rgba(0,0,0,0.5);
+    height:100vh;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:100%;
+    .content {
+        height:100%;
+        position:absolute;
+        top:0;
+        width:100%;
+        .button 
+        {
+            margin:25px 0 0 0;
+            .buttonElement 
+            {
+                .buttonZone 
+                {
+                    border:1px solid $white;
+                    border-radius:7px;
+                    cursor:pointer;
+                    display:inline-block;
+                    &:hover 
+                    {
+                        border-color:$dot;
+                    }
+                    .buttonArea 
+                    {
+                        align-items:center;
+                        display:flex;
+                        padding:31px 25px 31px 25px;
+                        a 
+                        {
+                            color:$white;
+                            display:inline-block;
+                            font-family:carterOneRegular;
+                            font-size:25px;
+                            margin:0;
+                            padding:0;
+                            &:hover 
+                            {
+                                color:$white;
+                            }
+                        }
+                        .img 
+                        {
+                            display:inline-block;
+                            margin:0 0 0 35px;
+                            img 
+                            {
+                                display:inline-block;
+                                height:auto;
+                                margin:0;
+                                padding:0;
+                                width:35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 
+        {
+            .research
+            {
+                color:$dot;
+            }
+        }
+        h2 
+        {
+            margin:15px 0 0 0;
+        }
+    }
+    .hamburger {
+        background:$hamburger;
+        cursor:pointer;
+        display:flex;
+        flex-direction:column;
+        height:50px;
+        justify-content:space-around;
+        padding:10px;
+        position:fixed;
+        right:62.5px;
+        top:37.5px;
+        visibility:hidden;
+        width:55px;
+        z-index:11;
+        .lineBottom {
+          background:$white;
+          height:3px;
+          transition:all 0.8s;
+          width:100%;
+        }
+        .lineMiddle {
+            background:$white;
+            height:3px;
+            transition:all 0.8s;
+            width:75%;
+        }
+        .lineTop {
+            background:$white;
+            height:3px;
+            transition:all 0.8s;
+            width:100%;
+        }
+    }
+    .verticalTop 
+    {
+        align-items:center;
+        display:flex;
+        height:125px;
+        .navbar {
+            display:flex;
+            justify-content:end;
+            position:relative;
+            z-index:2;
+            nav {
+                margin:0 62.5px 0 0;
+                a {
+                    color:$white;
+                    font-family:carterOneRegular;
+                    text-decoration:none;
+                    &:hover {
+                        color:$dot;
+                    }
+                }
+                .linkMargin 
+                {
+                    margin:0 30px 0 0;
+                }
+            }
+        }
+        .scientisTemplate
+        {
+            a 
+            {
+                .scientisText 
+                {
+                    background:initial;
+                    border-radius:initial;
+                    font-family:luckiestGuyRegular;
+                    font-size:0;
+                    margin:0 0 0 62.5px;
+                    padding:0;
+                    position:relative;
+                    z-index:2;
+                    .dot 
+                    {
+                        color:$dot;
+                    }
+                    span 
+                    {
+                        display:inline-block;
+                        font-size:28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:275px) 
+{
+    header 
+    {
+        .hamburger 
+        {
+            right:36px;
+        }
+        .verticalTop 
+        {
+            .scientisTemplate 
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        margin:0 0 0 36px;
+                        span 
+                        {
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:276px) and (max-width:325px) 
+{
+    header 
+    {
+        .hamburger 
+        {
+            right:48px;
+        }
+        .verticalTop 
+        {
+            .scientisTemplate 
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        margin:0 0 0 48px;
+                        span 
+                        {
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:300px)
+{
+    header 
+    {
+        .content 
+        {
+            .button 
+            {
+                .buttonElement 
+                {
+                    .buttonZone 
+                    {
+                        .buttonArea 
+                        {
+                            padding:17px 14px 17px 14px;
+                            a 
+                            {
+                                font-size:14px;
+                            }
+                            .img 
+                            {
+                                margin:0 0 0 19px;
+                                img 
+                                {
+                                    height:auto;
+                                    width:19px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h1 
+            {
+                display:inline-block;
+                font-size:23px;
+                span 
+                {
+                    text-align:center;
+                }
+            }
+            h2 
+            {
+                font-size:20px;
+                margin:15px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:326px) and (max-width:375px) 
+{
+    header 
+    {
+        .verticalTop 
+        {
+            .scientisTemplate 
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        span 
+                        {
+                            font-size:21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:400px)
+{
+    header 
+    {
+        .content 
+        {
+            .button 
+            {
+                .buttonElement 
+                {
+                    .buttonZone 
+                    {
+                        .buttonArea 
+                        {
+                            padding:23px 19px 23px 19px;
+                            a 
+                            {
+                                font-size:19px;
+                            }
+                            .img 
+                            {
+                                margin:0 0 0 26px;
+                                img 
+                                {
+                                    height:auto;
+                                    width:26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h1 
+            {
+                display:inline-block;
+                font-size:31px;
+                span 
+                {
+                    text-align:center;
+                }
+            }
+            h2 
+            {
+                font-size:27px;
+                margin:15px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:401px) and (max-width:525px)
+{
+    header 
+    {
+        .content 
+        {
+            h1 
+            {
+                display:inline-block;
+                font-size:42px;
+                span 
+                {
+                    text-align:center;
+                }
+            }
+            h2 
+            {
+                margin:15px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:700px) 
+{
+    header 
+    {
+        .content 
+        {
+            h1 
+            {
+                display:inline-block;
+                font-size:56px;
+                span 
+                {
+                    text-align:center;
+                }
+            }
+            h2 
+            {
+                margin:15px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1125px) 
+{
+    header 
+    {
+        .mobileMenu 
+        {
+            display:none;
+        }
+    }
+}
+
+
+@media (max-width:1125px) 
+{
+    header {
+        .hamburger {
+            visibility:visible;
+        }
+        .mobileMenu {
+            align-items:center;
+            background:$black;
+            display:flex;
+            height:100vh;
+            justify-content:center;
+            left:-1125px;
+            padding:0;
+            position:fixed;
+            top:0;
+            z-index:2;
+            nav {
+                a {
+                    color:$white;
+                    display:block;
+                    font-family:carterOneRegular;
+                    margin:40px;
+                    text-align:center;
+                }
+            }
+        }
+        .verticalTop 
+        {
+            .navbar 
+            {
+                display:none !important;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px) 
+{
+    header {
+        .content {
+            .button 
+            {
+                margin:31px 0 0 0;
+                .buttonElement 
+                {
+                    .buttonZone 
+                    {
+                        border:1.25px solid $white;
+                        border-radius:8.7px;
+                        .buttonArea 
+                        {
+                            padding:38px 31px 38px 31px;
+                            a 
+                            {
+                                font-size:31px;
+                            }
+                            .img 
+                            {
+                                margin:0 0 0 43px;
+                                img 
+                                {
+                                    height:auto;
+                                    width:43px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h2 
+            {
+                margin:18px 0 0 0;
+            }
+        }
+        .verticalTop 
+        {
+            height:195px;
+            .navbar {
+                nav {
+                    margin:0 78px 0 0;
+                    .linkMargin 
+                    {
+                        margin:0 37px 0 0;
+                    }
+                }
+            }
+            .scientisTemplate
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        margin:0 0 0 78px;
+                        span 
+                        {
+                            font-size:35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px) 
+{
+    header {
+        .content {
+            .button 
+            {
+                margin:38px 0 0 0;
+                .buttonElement 
+                {
+                    .buttonZone 
+                    {
+                        border:1.56px solid $white;
+                        border-radius:10.8px;
+                        .buttonArea 
+                        {
+                            padding:47px 38px 47px 38px;
+                            a 
+                            {
+                                font-size:38px;
+                            }
+                            .img 
+                            {
+                                margin:0 0 0 53px;
+                                img 
+                                {
+                                    height:auto;
+                                    width:53px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h2 
+            {
+                margin:22px 0 0 0;
+            }
+        }
+        .verticalTop 
+        {
+            height:243px;
+            .navbar {
+                nav {
+                    margin:0 97px 0 0;
+                    .linkMargin 
+                    {
+                        margin:0 46px 0 0;
+                    }
+                }
+            }
+            .scientisTemplate
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        margin:0 0 0 97px;
+                        span 
+                        {
+                            font-size:43px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px) 
+{
+    header {
+        .content {
+            .button 
+            {
+                margin:47px 0 0 0;
+                .buttonElement 
+                {
+                    .buttonZone 
+                    {
+                        border:1.95px solid $white;
+                        border-radius:13.5px;
+                        .buttonArea 
+                        {
+                            padding:58px 47px 58px 47px;
+                            a 
+                            {
+                                font-size:47px;
+                            }
+                            .img 
+                            {
+                                margin:0 0 0 66px;
+                                img 
+                                {
+                                    height:auto;
+                                    width:66px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h2 
+            {
+                margin:27px 0 0 0;
+            }
+        }
+        .verticalTop 
+        {
+            height:303px;
+            .navbar {
+                nav {
+                    margin:0 121px 0 0;
+                    .linkMargin 
+                    {
+                        margin:0 57px 0 0;
+                    }
+                }
+            }
+            .scientisTemplate
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        margin:0 0 0 121px;
+                        span 
+                        {
+                            font-size:53px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    header {
+        .content {
+            .button 
+            {
+                margin:58px 0 0 0;
+                .buttonElement 
+                {
+                    .buttonZone 
+                    {
+                        border:2.43px solid $white;
+                        border-radius:16.8px;
+                        .buttonArea 
+                        {
+                            padding:72px 58px 72px 58px;
+                            a 
+                            {
+                                font-size:58px;
+                            }
+                            .img 
+                            {
+                                margin:0 0 0 82px;
+                                img 
+                                {
+                                    height:auto;
+                                    width:82px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h2 
+            {
+                margin:33px 0 0 0;
+            }
+        }
+        .verticalTop 
+        {
+            height:378px;
+            .navbar {
+                nav {
+                    margin:0 151px 0 0;
+                    .linkMargin 
+                    {
+                        margin:0 71px 0 0;
+                    }
+                }
+            }
+            .scientisTemplate
+            {
+                a 
+                {
+                    .scientisText 
+                    {
+                        margin:0 0 0 151px;
+                        span 
+                        {
+                            font-size:66px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

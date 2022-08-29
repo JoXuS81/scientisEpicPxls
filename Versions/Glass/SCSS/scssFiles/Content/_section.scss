@@ -1,0 +1,568 @@
+/*
+TABLE OF CONTENTS
+*****************
+
+- Section
+ - Import About
+ - Import Contact
+ - Import Footer
+ - Import Header
+ - Import News
+ - Import Projects
+ - Import Research
+ - Import Science
+ - Info
+  - H5
+ - Plus and Line
+  - Line Zone
+  - Plus
+   - Horizontal
+   - Vertical
+ - Section Content
+  - Button Element
+   - Button
+    - Button Area
+     - A
+      - A:Hover  
+     - .Img
+      - Img
+  - Content Area
+  - Heading Line
+  - Heading Width
+- Media Queries
+ - Max Width - 650px
+ - Other Screen Sizes
+
+*/
+
+
+// Sections
+section 
+{
+    // Import sections files
+    @import "../Sections/about";
+    @import "../Sections/contact";
+    @import "../Sections/footer";
+    @import "../Sections/header";
+    @import "../Sections/news";
+    @import "../Sections/projects";
+    @import "../Sections/research";
+    @import "../Sections/science";
+    .info
+    {
+        margin-left:60px;
+        h5 
+        {
+            margin:0;
+            padding:0;
+        }
+    }
+    // Plus and line - header and science
+    .plusAndLine 
+    {
+        margin:7px 0 0 0;
+        .lineZone 
+        {
+            background:$white;
+            bottom:13.5px;
+            height:1px;
+            left:60px;
+            position:relative;
+            width:calc(100% - 60px);
+        }
+        .plus 
+        {
+            bottom:12.5px;
+            height:25px;
+            margin:0;
+            padding:0;
+            position:relative;
+            .horizontal
+            {
+                background:$white;
+                bottom:0;
+                height:1px;
+                left:0;
+                position:absolute;
+                width:25px;
+            }
+            .vertical
+            {
+                background:$white;
+                bottom:0;
+                height:1px;
+                left:0;
+                position:absolute;
+                transform:rotate(90deg);
+                width:25px;
+            }
+        }
+    }
+    // Section content, paddings
+    .sectionContent
+    {
+        padding-bottom:132px;
+        // Buttons
+        .buttonElement 
+        {
+            color:#fff;
+            display:block;
+            font-family:koulenRegular;
+            font-size:24px;
+            letter-spacing:2px;
+            overflow:hidden;
+            padding:20px 40px;
+            position:absolute;
+            text-decoration:none;
+            text-transform:uppercase;
+            &:hover span:nth-child(1)
+            {
+                left:-50%;
+                top:0;
+            }
+            &:hover span:nth-child(2)
+            {
+                left:0;
+                top:-50%;
+            }
+            &:hover span:nth-child(3)
+            {
+                bottom:0;
+                right:-50%;
+            }
+            &:hover span:nth-child(4)
+            {
+                bottom:-50%;
+                right:0;
+            }
+            span:nth-child(1)
+            {
+                left:50%;
+                top:0;
+            }
+            span:nth-child(2)
+            {
+                left:0;
+                top:50%;
+            }
+            span:nth-child(3)
+            {
+                bottom:0;
+                right:50%;
+            }
+            span:nth-child(4)
+            {
+                bottom:50%;
+                right:0;
+            }
+            span:nth-child(even) 
+            {
+                background:#fff;
+                display:block;
+                height:100%;
+                position:absolute;
+                transition:0.5s ease-in-out;
+                width:2px;
+            }
+            span:nth-child(odd) 
+            {
+                background:#fff;
+                display:block;
+                height:2px;
+                position:absolute;
+                transition:0.5s ease-in-out;
+                width:100%;
+            }
+        }
+        .contentArea 
+        {
+            margin-top:160px;
+        }
+        .headingLine 
+        {
+            background:$loaderFirstShape;
+            height:3px;
+            margin-top:11px;
+            width:50px;
+        }
+        .headingWidth 
+        {
+            width:68.75%;
+        }
+    }
+}
+
+
+// Screen size - max width - 650px
+@media (max-width:650px)
+{
+    .sectionContent 
+    {
+        .buttonElement 
+        {
+            .button 
+            {
+                .buttonArea 
+                {
+                    padding:25px 20px 25px 20px !important;
+                    a 
+                    {
+                        font-size:24px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Other screen sizes
+@media (min-width:651px) and (max-width:1600px)
+{
+    section 
+    {
+        .sectionContent 
+        {
+            .headingWidth 
+            {
+                width:100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1400px)
+{
+    .infoLine 
+    {
+        top:0;
+        h4 
+        {
+            text-align:center;
+        }
+        h5 
+        {
+            text-align:center;
+        }
+        .line 
+        {
+            display:none;
+        }
+    }
+    .plus 
+    {
+        display:none;
+    }
+    .sectionContent 
+    {
+        .buttonElement
+        {
+            display:flex;
+            justify-content:center;
+        }
+        .heading 
+        {
+            display:flex;
+            justify-content:center;
+            h3 
+            {
+                text-align:center;
+            }
+        }
+        .headingLineArea 
+        {
+            display:flex;
+            justify-content:center;
+        }
+    }
+}
+
+
+@media(min-width:1400px) and (max-width:1500px)
+{
+    .infoLine 
+    {
+        top:0;
+        h4 
+        {
+            text-align:center;
+        }
+        h5 
+        {
+            text-align:center;
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    section 
+    {
+        .info
+        {
+            margin-left:75px;
+        }
+        .plusAndLine 
+        {
+            margin:8.7px 0 0 0;
+            .lineZone 
+            {
+                bottom:16.9px;
+                height:1.25px;
+                left:75px;
+                width:calc(100% - 75px);
+            }
+            .plus 
+            {
+                bottom:15.6px;
+                height:31px;
+                left:15px;
+                position:relative;
+                .horizontal
+                {
+                    height:1.25px;
+                    width:31px;
+                }
+                .vertical
+                {
+                    height:1.25px;
+                    width:31px;
+                }
+            }
+        }
+        .sectionContent 
+        {
+            padding-bottom:165px;
+            .buttonElement 
+            {
+                font-size:30px;
+                letter-spacing:2.5px;
+                padding:25px 50px;
+                span:nth-child(even) 
+                {
+                    width:2.5px;
+                }
+                span:nth-child(odd) 
+                {
+                    height:2.5px;
+                }
+            }
+            .contentArea 
+            {
+                margin-top:200px;
+            }
+            .headingLine 
+            {
+                height:3.7px;
+                margin-top:13px;
+                width:62px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    section 
+    {
+        .info
+        {
+            margin-left:93px;
+        }
+        .plusAndLine 
+        {
+            margin:10.8px 0 0 0;
+            .lineZone 
+            {
+                bottom:21.1px;
+                height:1.56px;
+                left:93px;
+                width:calc(100% - 93px);
+            }
+            .plus 
+            {
+                bottom:19.5px;
+                height:38px;
+                left:18px;
+                position:relative;
+                .horizontal
+                {
+                    height:1.56px;
+                    width:38px;
+                }
+                .vertical
+                {
+                    height:1.56px;
+                    width:38px;
+                }
+            }
+        }
+        .sectionContent 
+        {
+            padding-bottom:206px;
+            .buttonElement 
+            {
+                font-size:37px;
+                letter-spacing:3.1px;
+                padding:31px 62px;
+                span:nth-child(even) 
+                {
+                    width:3.1px;
+                }
+                span:nth-child(odd) 
+                {
+                    height:3.1px;
+                }
+            }
+            .contentArea 
+            {
+                margin-top:250px;
+            }
+            .headingLine 
+            {
+                height:4.6px;
+                margin-top:16px;
+                width:77px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    section 
+    {
+        .info
+        {
+            margin-left:116px;
+        }
+        .plusAndLine 
+        {
+            margin:13.5px 0 0 0;
+            .lineZone 
+            {
+                bottom:26.4px;
+                height:1.95px;
+                left:116px;
+                width:calc(100% - 116px);
+            }
+            .plus 
+            {
+                bottom:24.3px;
+                height:47px;
+                left:22px;
+                position:relative;
+                .horizontal
+                {
+                    height:1.95px;
+                    width:47px;
+                }
+                .vertical
+                {
+                    height:1.95px;
+                    width:47px;
+                }
+            }
+        }
+        .sectionContent 
+        {
+            padding-bottom:258px;
+            .buttonElement 
+            {
+                font-size:46px;
+                letter-spacing:3.8px;
+                padding:38px 77px;
+                span:nth-child(even) 
+                {
+                    width:3.8px;
+                }
+                span:nth-child(odd) 
+                {
+                    height:3.8px;
+                }
+            }
+            .contentArea 
+            {
+                margin-top:312px;
+            }
+            .headingLine 
+            {
+                height:5.7px;
+                margin-top:20px;
+                width:96px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px) 
+{
+    section 
+    {
+        .info
+        {
+            margin-left:145px;
+        }
+        .plusAndLine 
+        {
+            margin:16.9px 0 0 0;
+            .lineZone 
+            {
+                bottom:33px;
+                height:2.43px;
+                left:145px;
+                width:calc(100% - 145px);
+            }
+            .plus 
+            {
+                bottom:30.4px;
+                height:58px;
+                left:27px;
+                position:relative;
+                .horizontal
+                {
+                    height:2.43px;
+                    width:58px;
+                }
+                .vertical
+                {
+                    height:2.43px;
+                    width:58px;
+                }
+            }
+        }
+        .sectionContent 
+        {
+            padding-bottom:323px;
+            .buttonElement 
+            {
+                font-size:57px;
+                letter-spacing:4.7px;
+                padding:47px 96px;
+                span:nth-child(even) 
+                {
+                    width:4.7px;
+                }
+                span:nth-child(odd) 
+                {
+                    height:4.7px;
+                }
+            }
+            .contentArea 
+            {
+                margin-top:390px;
+            }
+            .headingLine 
+            {
+                height:7.1px;
+                margin-top:25px;
+                width:120px;
+            }
+        }
+    }
+}
